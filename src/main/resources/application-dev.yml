@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /capacity
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://ec2-3-141-85-3.us-east-2.compute.amazonaws.com:3306/capacity
+    username: root
+    password: Root@123
+  jpa:
+    show-sql: true
+    hibernate:
+      use-new-id-generator-mappings: false
+      ddl-auto: none
+
+
+
