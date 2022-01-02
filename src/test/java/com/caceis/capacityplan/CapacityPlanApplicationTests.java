@@ -3,11 +3,11 @@ package com.caceis.capacityplan;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class CapacityPlanApplicationTests {
+//@SpringBootTest
+//class CapacityPlanApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+//	@Test
+//	void contextLoads() {
+//	}
 
-}
+//}
