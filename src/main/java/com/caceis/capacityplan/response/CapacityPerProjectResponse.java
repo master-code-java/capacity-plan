@@ -1,20 +1,28 @@
 package com.caceis.capacityplan.response;
 
-import java.util.Map;
-
 public class CapacityPerProjectResponse {
 
-    private Map<String,Long> projectsCapacity;
+    private String projectName;
+    private Double amountOfHours;
 
-    public CapacityPerProjectResponse(Map<String, Long> projectsCapacity) {
-        this.projectsCapacity = projectsCapacity;
+    public CapacityPerProjectResponse(String projectName, Double amountOfHours) {
+        this.projectName = projectName;
+        this.amountOfHours = amountOfHours;
     }
 
-    public Map<String, Long> getProjectsCapacity() {
-        return projectsCapacity;
+    public String getProjectName() {
+        return projectName;
     }
 
-    public void setProjectsCapacity(Map<String, Long> projectsCapacity) {
-        this.projectsCapacity = projectsCapacity;
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
+    }
+
+    public Double getAmountOfHours() {
+        return amountOfHours;
+    }
+
+    public void setAmountOfHours(Double amountOfHours) {
+        this.amountOfHours = amountOfHours;
     }
 }

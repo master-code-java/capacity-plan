@@ -23,6 +23,6 @@ public interface DashboardRepository extends CrudRepository<SprintAndTask, Long>
             "WHERE \n" +
             "st.sprint_uuid=:sprintUuid\n" +
             "GROUP BY prj.name",nativeQuery = true)
-    List<Map<String, Long>> getCapacityPerProject(@Param("sprintUuid") String sprintUuid);
+    List<Map<String, Object>> getCapacityPerProject(@Param("sprintUuid") String sprintUuid);
 
 }
