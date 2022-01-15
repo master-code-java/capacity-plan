@@ -7,9 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ProjectRepository extends JpaRepository<Project, Integer> {
 
-	//@Query(value="select new com.caceis.capacity.dto.ProjectsDto(p.id,p.name,t.uuid,t.title) FROM Task t INNER JOIN t.project p")
-	//List<ProjectsDto> getProjectsAndTasks();
-
     Project findByName(String name);
 
 }
