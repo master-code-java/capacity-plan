@@ -32,8 +32,9 @@ public class DashboardServiceImpl implements DashboardService {
                 .reduce(0L, Long::sum);
 
         long hoursProvided = 1000L;
+        long hoursRemaining = hoursProvided - hoursRequested;
 
-        return new CapacityInHoursResponse(hoursRequested, hoursProvided);
+        return new CapacityInHoursResponse(hoursRequested, hoursProvided, hoursRemaining);
     }
 
     @Override
