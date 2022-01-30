@@ -36,5 +36,6 @@ public class AssigneeServiceImpl implements AssigneeService {
     @Override
     public List<Assigne> getAll() {
         return assigneRepository.findAll();
+        // Restart build
     }
 }
